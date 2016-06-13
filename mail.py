@@ -21,7 +21,7 @@ def send_email(title="",data=""):
     msg['To'] = ','.join(to)
 
     # body of the email
-    text="Hello all,\n Zero search result query. Please find the attachment.\n Regards:\nJitender"
+    text="Hello all,\n\nZero search result query. Please find the attachment.\n\n Regards:\nJitender"
     part1 = MIMEText(text, 'plain')
     msg.attach(part1)
 
