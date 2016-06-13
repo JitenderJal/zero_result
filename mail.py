@@ -12,8 +12,8 @@ from smtplib import SMTPException
 
 def send_email(title="",data=""):
     me = 'jitender.jal@zopper.com'
-    # to = ['rahul.gupta@zopper.com','jitender.jal@zopper.com','mayank.gupta@zopper.com','ravi@zopper.com','roshni@zopper.com']#,'archana@zopper.com','rahul.gupta@zopper.com','siddharth@zopper.com']
-    to = ["jitender.jal@zopper.com"]
+    to = ['rahul.gupta@zopper.com','jitender.jal@zopper.com','mayank.gupta@zopper.com','ravi@zopper.com','roshni@zopper.com']#,'archana@zopper.com','rahul.gupta@zopper.com','siddharth@zopper.com']
+    # to = ["jitender.jal@zopper.com"]
     # Create message container - the correct MIME type is multipart/alternative.
     msg = MIMEMultipart('mixed')
     msg['Subject'] = title
