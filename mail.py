@@ -11,7 +11,7 @@ from datetime import date , timedelta
 from smtplib import SMTPException
 
 def send_email(title="",data=""):
-    me = 'akash.mangla@zopper.com'
+    me = 'jitender.jal@zopper.com'
     # to = ['rahul.gupta@zopper.com','jitender.jal@zopper.com','mayank.gupta@zopper.com','ravi@zopper.com','roshni@zopper.com']#,'archana@zopper.com','rahul.gupta@zopper.com','siddharth@zopper.com']
     to = ["jitender.jal@zopper.com"]
     # Create message container - the correct MIME type is multipart/alternative.
@@ -21,7 +21,7 @@ def send_email(title="",data=""):
     msg['To'] = ','.join(to)
 
     # body of the email
-    text="nothin"
+    text="Hello all,\n Zero search result query. Please find the attachment.\n Regards:\nJitender"
     part1 = MIMEText(text, 'plain')
     msg.attach(part1)
 
