@@ -110,8 +110,8 @@ regions = {
 #     server.quit()
 
 if __name__ == "__main__":
-    # files = glob.glob("/mnt/ebs/solr-4.10.2/example/logs/*")
-    files = glob.glob("*.log")
+    files = glob.glob("/mnt/ebs/solr-4.10.2/example/logs/*")
+    # files = glob.glob("*.log")
     data = []
     for file in files:
         print file
