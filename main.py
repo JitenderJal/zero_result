@@ -113,6 +113,7 @@ if __name__ == "__main__":
     files = glob.glob("/mnt/ebs/solr-4.10.2/example/logs/*")
     # files = glob.glob("*.log")
     data = []
+    data.append(["Title","Region"])
     for file in files:
         print file
         fdata = open(file,"r")
